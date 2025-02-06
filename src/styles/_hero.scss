@@ -4,7 +4,7 @@
 .hero {
   @include mixins.set-section;
   height: 908px;
-  background-image: url("../assets/images/hero_bg.jpeg");
+  background-image: url("../assets/images/hero_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

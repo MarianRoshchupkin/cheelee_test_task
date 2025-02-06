@@ -1,0 +1,66 @@
+@use "variables";
+
+@mixin set-section {
+  width: 100%;
+}
+
+@mixin set-section-container {
+  display: flex;
+  padding: 0 80px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin set-navigation-button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: variables.$text-secondary;
+}
+
+@mixin set-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background-color: variables.$overlay;
+}
+
+@mixin set-media-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin set-section-title {
+  margin: 0;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 88px;
+  color: variables.$white;
+}
+
+@mixin set-section-subtitle {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 38px;
+  color: variables.$white;
+}
+
+@mixin set-section-description {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 33px;
+  color: variables.$text-color;
+}
+
+@mixin set-action-number {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 80px;
+  color: variables.$overlay;
+}

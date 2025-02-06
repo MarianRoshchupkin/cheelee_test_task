@@ -1,0 +1,46 @@
+@use "variables";
+@use "mixins";
+
+.features {
+  @include mixins.set-section;
+
+  &__container {
+    @include mixins.set-section-container;
+    //padding: 10px 80px;
+    max-width: 1512px;
+  }
+
+  &__preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px 60px 116px;
+    border-radius: 30px;
+    width: 100%;
+    background-image: url("../assets/images/features_bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  &__preview__thumbnail {
+    @include mixins.set-section-subtitle;
+  }
+
+  &__preview__thumbnail--accent {
+    color: variables.$accent-color;
+  }
+
+  &__preview__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: variables.$white;
+    background-color: variables.$overlay-light;
+  }
+}

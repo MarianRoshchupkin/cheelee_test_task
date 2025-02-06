@@ -1,0 +1,61 @@
+@use "variables";
+@use "mixins";
+
+.about {
+  @include mixins.set-section;
+
+  &__container {
+    @include mixins.set-section-container;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 80px 100px 80px;
+    max-width: 1282px;
+  }
+
+  &__title {
+    @include mixins.set-section-title;
+  }
+
+  &__title--accent {
+    color: variables.$accent-color;
+  }
+
+  &__subtitle {
+    @include mixins.set-section-subtitle;
+  }
+
+  &__subtitle--accent {
+    color: variables.$accent-color;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__wrapper__info {
+    @include mixins.set-section-subtitle;
+    width: 100%;
+    font-weight: 400;
+    color: variables.$text-color;
+  }
+
+  &__wrapper__info--accent {
+    font-weight: 700;
+  }
+
+  &__wrapper__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  &__wrapper__desc {
+    @include mixins.set-section-description;
+  }
+
+  &__wrapper__desc--accent {
+    font-weight: 700;
+  }
+}

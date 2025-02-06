@@ -1,0 +1,85 @@
+@use "variables";
+@use "mixins";
+
+.hero {
+  @include mixins.set-section;
+  height: 908px;
+  background-image: url("../assets/images/hero_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__container {
+    @include mixins.set-section-container;
+    justify-content: space-between;
+    max-width: 1512px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    max-width: 348px;
+  }
+
+  &__info__thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin: 282px 0 0 0;
+  }
+
+  &__info__title {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 68px;
+    color: variables.$white;
+  }
+
+  &__info__title--accent {
+    color: variables.$accent-color;
+  }
+
+  &__info__action {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    color: variables.$white;
+  }
+
+  &__info__registration {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__info__link {
+    @include mixins.set-media-container;
+  }
+
+  &__info__image {
+    @include mixins.set-media-image;
+  }
+
+  &__info__desc {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: variables.$white;
+  }
+
+  &__media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 200px 0 0 0;
+  }
+
+  &__media__link {
+    @include mixins.set-media-container;
+  }
+
+  &__media__image {
+    @include mixins.set-media-image;
+  }
+}

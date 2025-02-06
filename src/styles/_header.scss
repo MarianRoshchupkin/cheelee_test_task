@@ -1,0 +1,140 @@
+@use "variables";
+@use "mixins";
+
+.header {
+  @include mixins.set-section;
+
+  &__container {
+    @include mixins.set-section-container;
+    padding: 20px 80px;
+    max-width: 1512px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 92px;
+  }
+
+  &__logo__icon {
+    width: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin: 0 0 0 auto;
+  }
+
+  &__nav__link {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: variables.$text-secondary;
+  }
+
+  &__nav__link--accent {
+    font-weight: 700;
+    color: variables.$accent-color;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0 0 0 auto;
+  }
+
+  &__rate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__rate__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30px;
+  }
+
+  &__rate__image {
+    width: 100%;
+  }
+
+  &__rate__desc {
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 10px;
+    color: variables.$light-bg;
+  }
+
+  &__rate__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+
+  &__rate__price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: variables.$white;
+  }
+
+  &__rate__quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__rate__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__audit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    background-color: variables.$overlay;
+  }
+
+  &__audit__image {
+    width: 100%;
+    max-width: 132px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__button__lang {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: variables.$text-secondary;
+  }
+
+  &__button__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__button__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
